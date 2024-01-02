@@ -1,0 +1,5 @@
+Build the docker image from dockerfile using "docker build -t {image_name}"
+
+Run the docker image using "docker run -it {image_name} python3 /path/to/the/.py/file --model_path /path/to/model" --convert_type {txt/xml/json} --input_dir /path/to/input --output_dir /path/to/output" 
+
+For example :- "docker run -it yolov5_txt_gen:v2 python3 /app/convert_class.py --model_path /app/yolov5s.pt --convert_type json --input_dir /app/images --output_dir /app/images_output"
